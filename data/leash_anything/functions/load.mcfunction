@@ -1,0 +1,1 @@
+scoreboard objectives add drop_lead minecraft.dropped:minecraft.lead

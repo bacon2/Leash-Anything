@@ -1,3 +1,0 @@
-execute as @a[scores={drop_lead=1..}] at @s unless data entity @e[distance=0.1..7, type=!#leash_anything:inanimate, type=!minecraft:player, nbt=!{Leash:[]}, limit=1, sort=nearest] Leash run kill @e[type=item, limit=1, sort=nearest, nbt={Item:{id:"minecraft:lead"}}]
-execute as @a[scores={drop_lead=1..}] at @s run data modify entity @e[distance=0.1..7, type=!#leash_anything:inanimate, type=!minecraft:player, nbt=!{Leash:[]}, limit=1, sort=nearest] Leash.UUID set from entity @p UUID
-execute as @a[scores={drop_lead=1..}] at @s run scoreboard players reset @s 
